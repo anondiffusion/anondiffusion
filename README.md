@@ -24,7 +24,7 @@ Specify model confiurations and save directory.
 Run the below script.
 
 ```
-python scripts/image_sample.py --attention_resolutions 16 --class_cond False --diffusion_steps 1000 --dropout 0.1 --image_size 256 --learn_sigma True --noise_schedule linear --num_channels 256 --num_head_channels 64 --num_res_blocks 1 --resblock_updown True --use_fp16 True --use_scale_shift_norm True --timestep_respacing 250 --use_ddim False --model_path YOUR_MODEL_PATH --save_dir YOUR_SAVE_PATH
+python scripts/image_sample.py --attention_resolutions 16 --class_cond False --diffusion_steps 1000 --dropout 0.1 --image_size 256 --learn_sigma True --noise_schedule linear --num_channels 128 --num_head_channels 64 --num_res_blocks 1 --resblock_updown True --use_fp16 True --use_scale_shift_norm True --timestep_respacing 250 --use_ddim False --model_path YOUR_MODEL_PATH --save_dir YOUR_SAVE_PATH
 ```
 
 To sample for 25 timesteps with DDIM, replace `--timestep_respacing 250` to `--timestep_respacing ddim25`, and replace `--use_ddim False` to `--use_ddim True`.
