@@ -3,6 +3,12 @@
 This implementation is heavily based on [guided-diffusion](https://github.com/openai/guided-diffusion).
 
 ## Preparation
+Our code is tested on PyTorch 1.7.
+
+Set PYTHONPATH variable to point to the root of the repository.
+```
+export PYTHONPATH=$PYTHONPATH:$(pwd)
+```
 
 We provide models trained with our P2 weighting on various datasets.
 Here are the download links for each model checkpoint:
